@@ -1,0 +1,523 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* -----Header Section------ */
+
+.nav {
+    width: 100%;
+    margin: 0% auto;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.nav a img {
+    width: 70px;
+    height: 60px;
+}
+
+.list {
+    display: flex;
+    gap: 25px;
+}
+
+.list li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.list li a:hover {
+    color: rgb(246, 94, 6);
+    border-bottom: 2px solid rgb(246, 94, 6);
+}
+
+.list button {
+    width: 92px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 0px solid rgb(246, 94, 6);
+    background-color: rgb(246, 94, 6);
+}
+
+.list button:hover {
+    background-color: rgb(248, 132, 65);
+}
+
+.list button a {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+#toggle,
+label {
+    display: none;
+}
+
+
+/* -----Hero Section------ */
+
+.hero {
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero .hero-left h2 {
+    font-size: 3.5vw;
+    text-align: justify;
+}
+
+.hero .hero-left h2 span {
+    color: rgb(246, 94, 6);
+}
+
+.hero .hero-left p {
+    font-size: 16px;
+    color: gray;
+    text-align: justify;
+}
+
+.hero-left {
+    width: 40%;
+}
+
+.hero-right {
+    width: 40%;
+}
+
+.hero .hero-left button {
+    width: 150px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(246, 94, 6);
+    background-color: rgb(246, 94, 6);
+}
+
+.hero .hero-left button:hover {
+    background-color: rgb(248, 132, 65);
+}
+
+.hero .hero-left button a {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+
+/* -----Services Section------ */
+
+.service {
+    height: auto;
+    margin-bottom: 8%;
+}
+
+.service h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.service h2 span {
+    color: rgb(246, 94, 6);
+}
+
+.service p {
+    text-align: center;
+    color: gray;
+    font-size: 17px;
+}
+
+.service .sub-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    height: 55%;
+}
+
+.service .sub-service .serv1,
+.service .sub-service .serv2,
+.service .sub-service .serv3,
+.service .sub-service .serv4 {
+    height: 26vh;
+    width: 30vh;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.service .sub-service .serv1 svg {
+    width: 35%;
+    height: 35%;
+    background-color: green;
+    border-radius: 17px 5px 50px 5px;
+    padding: 9%;
+}
+
+.service .sub-service .serv2 svg {
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 0, 0);
+    border-radius: 17px 5px 50px 5px;
+    padding: 9%;
+}
+
+.service .sub-service .serv1 p,
+.service .sub-service .serv2 p,
+.service .sub-service .serv3 p,
+.service .sub-service .serv4 p {
+    padding: 15px;
+    text-align: justify;
+}
+
+.service .sub-service .serv3 svg {
+    width: 35%;
+    height: 35%;
+    background-color: rgb(0, 119, 255);
+    border-radius: 17px 5px 50px 5px;
+    padding: 9%;
+}
+
+.service .sub-service .serv4 svg {
+    width: 35%;
+    height: 35%;
+    background-color: rgb(255, 106, 0);
+    border-radius: 17px 5px 50px 5px;
+    padding: 9%;
+}
+
+
+/* -----Solution Section------ */
+
+.solution {
+    height: 55vh;
+    background-color: rgb(238, 204, 190);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.solution .solution-left .sub-solution-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.solution .solution-left h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.solution .solution-left h2 span {
+    color: rgb(246, 94, 6);
+}
+
+.solution .solution-left p {
+    color: gray;
+}
+
+.solution .solution-left .sub-solution-left .solution-left1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.solution .solution-left button {
+    width: 150px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(246, 94, 6);
+    background-color: rgb(246, 94, 6);
+}
+
+.solution .solution-left button:hover {
+    background-color: rgb(248, 132, 65);
+}
+
+.solution .solution-left button a {
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+.solution .solution-left .solution-left1 b {
+    border-radius: 50%;
+    font-size: 35px;
+    background-color: rgb(246, 94, 6);
+    width: 45px;
+    height: 45px;
+    color: white;
+    text-align: center;
+}
+
+
+/* -----Agency Section------ */
+
+.agency {
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.agency .agency-left {
+    width: 40%;
+}
+
+.agency .agency-left h2 {
+    font-size: 2vw;
+}
+
+.agency .agency-left h2 span {
+    color: rgb(246, 94, 6);
+}
+
+.agency .agency-left p {
+    text-align: justify;
+    color: gray;
+}
+
+.agency .agency-left button {
+    width: 150px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(246, 94, 6);
+    background-color: rgb(246, 94, 6);
+}
+
+.agency .agency-left button a {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.agency .agency-right {
+    width: 40%;
+}
+
+
+/* -----Footer Section------ */
+
+footer {
+    height: 28vh;
+    background-color: rgb(54, 53, 53);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-1 p {
+    color: white;
+}
+
+footer .footer-1 h3 {
+    color: rgb(246, 94, 6);
+}
+
+footer .footer-1 img {
+    border-radius: 50%;
+}
+
+.rights p {
+    background-color: rgb(246, 94, 6);
+    text-align: center;
+    color: white;
+}
+
+@media (max-width:620px) {
+    /* -----Header Section------ */
+    .nav {
+        height: auto;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        z-index: 10000;
+    }
+    .nav .list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .nav button {
+        display: none;
+    }
+    #toggle:checked~.list,
+    .nav button {
+        display: flex;
+    }
+    label {
+        display: block;
+    }
+    /* -----Hero Section------ */
+    .hero {
+        padding-top: 100px;
+        height: auto;
+        flex-direction: column;
+    }
+    .hero-left {
+        width: 90%;
+        height: auto;
+    }
+    .hero .hero-left h2 {
+        text-align: center;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .hero-left button {
+        width: fit-content;
+        height: auto;
+        padding: 5px;
+    }
+    .hero .hero-left button a {
+        font-size: 14px;
+    }
+    .hero-right {
+        width: 100%;
+    }
+    .hero-right img {
+        width: 150px;
+        height: auto;
+        float: right;
+    }
+    /* -----Services Section------ */
+    .service {
+        height: auto;
+        padding: 4%;
+    }
+    .service h2 {
+        font-size: 16px;
+    }
+    .service p {
+        text-align: justify;
+    }
+    .service .sub-service {
+        flex-direction: column-reverse;
+        row-gap: 10px;
+        height: auto;
+    }
+    .service .sub-service .serv1,
+    .service .sub-service .serv2,
+    .service .sub-service .serv3,
+    .service .sub-service .serv4 {
+        width: 90%;
+        height: auto;
+    }
+    .service .sub-service .serv1 svg,
+    .service .sub-service .serv2 svg,
+    .service .sub-service .serv3 svg,
+    .service .sub-service .serv4 svg {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    /* -----Solution Section------ */
+    .solution {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 4%;
+    }
+    .solution .solution-right {
+        width: 100%;
+    }
+    .solution .solution-right img {
+        width: 100px;
+        height: auto;
+    }
+    .solution .solution-left {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .solution .solution-left h2 {
+        font-size: 16px;
+    }
+    .solution .solution-left button {
+        width: fit-content;
+        height: auto;
+        padding: 4px;
+        float: right;
+    }
+    .solution .solution-left button a {
+        font-size: 14px;
+    }
+    .solution .solution-left .solution-left1 b {
+        border-radius: 50%;
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+    }
+    .solution .solution-left .sub-solution-left .solution-left2 h3 {
+        font-size: 14px;
+    }
+    .solution .solution-left .sub-solution-left .solution-left2 p {
+        font-size: 13px;
+    }
+    /* -----Agency Section------ */
+    .agency {
+        padding: 2%;
+        height: auto;
+        flex-direction: column;
+    }
+    .agency .agency-left {
+        width: 90%;
+    }
+    .agency .agency-right {
+        width: 100%;
+    }
+    .agency .agency-right img {
+        width: 100px;
+        height: auto;
+        float: right;
+    }
+    .agency .agency-left h2 {
+        font-size: 16px;
+    }
+    .agency .agency-left button {
+        width: fit-content;
+        height: auto;
+        padding: 4px;
+    }
+    .agency .agency-left button a {
+        font-size: 14px;
+    }
+    /* -----Footer Section------ */
+    footer {
+        padding: 5%;
+        height: auto;
+        flex-direction: column;
+        align-items: normal;
+    }
+    footer .footer-1 h3 {
+        font-size: 13px;
+    }
+    footer .footer-1 p {
+        font-size: 13px;
+    }
+}
