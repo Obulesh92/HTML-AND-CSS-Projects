@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="./logo2.jpg" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        text-decoration: none;
+    }
+    
+    body {
+        padding: 20px 20px;
+    }
+    
+    .main-box {
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        height: 60vh;
+        margin: 0% auto;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        text-align: center;
+    }
+    
+    .sub-box1 {
+        height: 48vh;
+    }
+    
+    .sub-box1 form {
+        height: 42vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .sub-box1 form #name,
+    .sub-box1 form #email,
+    .sub-box1 form #pwd {
+        width: 85%;
+        height: 4vh;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 1px 1px 1px gray;
+        border: 0px solid gray;
+        font-size: 15px;
+    }
+    
+    .sub-box1 form div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sub-box1 form div button {
+        width: 25vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: 1px solid rgb(246, 95, 19);
+        background-color: rgb(246, 95, 19);
+    }
+    
+    .sub-box1 form div button a {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .sub-box2 {
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .sub-box2 button {
+        width: 30%;
+        height: 5vh;
+        border-radius: 8px;
+        border: 0px solid gray;
+        box-shadow: 1px 1px 1px 1px gray;
+        background-color: white;
+    }
+    
+    .sub-box2 button a {
+        color: rgb(246, 95, 19);
+        font-size: 16px;
+    }
+    
+    footer p a {
+        color: rgb(246, 95, 19);
+        text-decoration: underline;
+    }
+    
+    @media (max-width:880px) {
+        body {
+            padding: 20px;
+        }
+        .main-box {
+            height: auto;
+            width: 100%;
+            padding: 5px;
+            margin: 0%;
+        }
+        .sub-box1 {
+            height: auto;
+        }
+        .sub-box1 form {
+            height: auto;
+            gap: 20px;
+        }
+        .sub-box1 form #name,
+        .sub-box1 form #email,
+        .sub-box1 form #pwd {
+            width: 90%;
+        }
+        .sub-box1 form div {
+            width: 100%;
+        }
+        .sub-box1 form div button {
+            width: 90%;
+            height: auto;
+        }
+        .sub-box2 {
+            height: auto;
+            flex-direction: column;
+        }
+        .sub-box2 button {
+            width: 90%;
+            height: 30px;
+        }
+    }
+</style>
+
+<body>
+    <img src="./logo.png" alt="logo" width="70" height="60">
+    <div class="main-box">
+        <div class="sub-box1">
+            <h1>Sign Up</h1>
+            <p>Sign up to continue</p>
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="pwd" id="pwd" placeholder="Password">
+                <div>
+                    <button><a href="./index.html">Sign up</a></button><br>
+                    <p><input type="checkbox" id="check">Remember me</p>
+                </div>
+            </form>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="sub-box2">
+            <button><a href="https://accounts.google.com/v3/signin/identifier?ifkv=AVdkyDlVH6siXmBpKaDis1dwy4wmN2iNovg6S7MNv3j9CiKAkJPoOjoDaIquLyaH09gX2-9QLRkcvg&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S623139629%3A1737023294309002&ddm=1">Google</a></button>
+            <button><a href="https://www.linkedin.com/login">LinkedIn</a></button>
+            <button><a href="">SSD</a></button>
+        </div>
+    </div>
+    <br>
+    <footer align="center">
+        <P>Already have an account? <a href="">Sign in</a></P>
+    </footer>
+</body>
+
+</html>
