@@ -1,0 +1,211 @@
+   * {
+       margin: 0%;
+       padding: 0%;
+       box-sizing: border-box;
+       text-decoration: none;
+       list-style: none;
+       color: lightgray;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   body {
+       background-color: black;
+       background-size: cover;
+       background-repeat: no-repeat;
+       margin: 0% auto;
+       width: 80%;
+   }
+   
+   p {
+       font-size: 0.9rem;
+       text-align: center;
+   }
+   
+   a {
+       font-size: 0.9rem;
+       text-align: center;
+       color: gray;
+   }
+   
+   a:hover {
+       color: whitesmoke;
+   }
+   
+   .head1 {
+       padding: 10px;
+       display: flex;
+       flex-direction: row;
+       gap: 10px;
+       align-items: center;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   
+   .head1 div img {
+       max-width: 10vw;
+   }
+   
+   .head1 div input {
+       padding: 5px;
+       max-width: 50vw;
+       font-size: 14px;
+   }
+   
+   .head1 div input[type="submit"] {
+       border-radius: 5px;
+       border: 2px solid #353935;
+       background-color: rgb(20, 19, 19);
+   }
+   
+   .head1 div input[type="submit"]:focus {
+       background-color: #353935;
+   }
+   
+   nav {
+       background-color: rgb(24, 22, 22);
+       border-radius: 5px;
+       border: 1px solid #353935;
+   }
+   
+   nav ul {
+       padding: 5px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       align-items: center;
+   }
+   
+   nav ul li {
+       padding: 4px;
+   }
+   
+   nav ul li a:hover {
+       border-bottom: 1px solid rgb(239, 174, 54);
+       color: whitesmoke;
+   }
+   
+   header .advantise {
+       text-align: center;
+       border: 1px solid rgb(238, 167, 75);
+       padding: 10px;
+   }
+   
+   header .advantise span {
+       color: rgb(249, 83, 83);
+   }
+   
+   .hero {
+       padding: 10px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 10px;
+   }
+   
+   .hero .hero1 {
+       padding: 10px;
+       box-shadow: 5px 5px 5px #353935;
+       width: 75%;
+       max-width: 100%;
+   }
+   
+   .hero .hero1 div h3,
+   .hero .hero2 div h3 {
+       border: 1px solid #353935;
+       padding: 10px;
+       background-color: rgb(33, 31, 31);
+   }
+   
+   .hero .hero1 .movies {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 10px;
+       flex-wrap: wrap;
+   }
+   
+   .hero .hero1 .movies div {
+       padding: 3px;
+       max-width: 23%;
+       border-radius: 2px;
+       border: 1px solid #353935;
+       background-color: black;
+   }
+   
+   .hero .hero1 .movies div img {
+       max-width: 11.5vw;
+       height: auto;
+   }
+   
+   .hero .hero1 .movies div p span {
+       color: rgb(41, 135, 41);
+       text-decoration: underline;
+       font-weight: bold;
+   }
+   
+   .hero .hero2 {
+       padding: 10px;
+       border: 1px solid #353935;
+       width: 23%;
+       background-color: black;
+   }
+   
+   .hero .hero2 div hr {
+       border-bottom: 1px solid #353935;
+   }
+   
+   footer {
+       padding: 20px;
+       text-align: justify;
+   }
+   
+   footer .provided {
+       text-decoration: underline;
+   }
+   
+   @media (max-width:890px) {
+       body {
+           width: 100%;
+       }
+       .head1 {
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+       .head1 div img {
+           min-width: 100px;
+           align-self: center;
+       }
+       .hero {
+           padding: 2%;
+           flex-direction: column;
+           margin: 0%;
+           width: 100%;
+       }
+       .hero .hero1,
+       .hero .hero2 {
+           width: 100%;
+           padding: 2px;
+           margin: 0%;
+       }
+       .hero .hero1 .movies {
+           padding: 5px;
+           flex-wrap: wrap;
+       }
+       .hero .hero1 .movies div {
+           min-width: 48%;
+       }
+       .hero .hero1 .movies div img {
+           min-width: 100%;
+           height: auto;
+       }
+       p {
+           font-size: 0.7em;
+       }
+       a {
+           font-size: 0.7rem;
+       }
+   }
