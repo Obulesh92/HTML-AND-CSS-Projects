@@ -1,0 +1,666 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: Arial;
+}
+
+body {
+    background-color: #e9e9e9;
+}
+
+
+/* --------------Header--------------------- */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: auto;
+}
+
+header .nav {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #14202c;
+    padding: 10px 20px;
+    flex-wrap: nowrap;
+}
+
+header .nav a img,
+footer img {
+    width: 120px;
+}
+
+header .nav .list {
+    display: none;
+}
+
+header .nav .nav-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+header .nav .nav-sub form {
+    width: 50%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header .nav .nav-sub form:active {
+    border: 1ps solid rgb(241, 209, 154);
+}
+
+.hidden-div {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 78px;
+    background-color: #223040;
+}
+
+.hidden-div a {
+    color: white;
+    padding: 10px;
+}
+
+header .nav .nav-sub form select,
+header .nav .nav-sub form button {
+    width: 50px;
+    height: 28px;
+}
+
+header .nav .nav-sub form button {
+    background-color: rgb(251, 168, 24);
+}
+
+header .nav .nav-sub form #ssearch {
+    width: 82.7%;
+    padding: 6px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+header .nav .nav-sub div {
+    color: white;
+}
+
+header .nav .list .browse,
+header .nav .list .trending,
+header .nav .list .top {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 3px solid lightgray;
+}
+
+header .nav .list .browse {
+    background-color: #223040;
+}
+
+header .nav .list .browse a {
+    float: right;
+    color: white;
+}
+
+header .nav .list .browse b,
+header .nav .list .browse h2,
+header .nav .list .browse h2 #ho {
+    color: white;
+}
+
+header .nav .list b,
+header .nav .list h2,
+header .nav .list a {
+    color: black;
+}
+
+header .nav .list .browse h2 #home {
+    width: 2px;
+    height: 2px;
+    float: right;
+    padding-right: 30px;
+    color: black;
+}
+
+header .nav .list a {
+    padding: 5px;
+    padding-left: 30px;
+}
+
+header .nav .list a:active {
+    background-color: lightgray;
+}
+
+#toggle,
+label {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 78px;
+    width: 100vw;
+    text-align: center;
+    background-color: #223040;
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    padding: 3px;
+    text-align: center;
+    padding: 10px;
+}
+
+.author {
+    padding: 5px;
+    background-color: white;
+    z-index: 10000;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    border: 1px solid orange;
+}
+
+.author span {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* -----------hero section------------- */
+
+#hero {
+    position: relative;
+    top: 130px;
+}
+
+#hero .hero {
+    width: 95%;
+    margin: 0% auto;
+}
+
+#hero .hero .view {
+    position: relative;
+    bottom: 230px;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#hero .hero .view div {
+    color: white;
+    padding: 15px 10px;
+    width: 52vw;
+    height: 36vh;
+    border-radius: 10px;
+}
+
+#hero .hero .view div:hover {
+    width: 100%;
+    height: 40vh;
+}
+
+#hero .hero .view .v1 {
+    background-image: url("./images/v1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+#hero .hero .view .v4 {
+    background-image: url("./images/v4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+#hero .hero .view .v5 {
+    background-image: url("./images/v5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+#hero .hero .view .v6 {
+    background-image: url("./images/v6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+#hero .hero .view .v7 {
+    background-image: url("./images/v7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+#hero .hero .view .v3 {
+    background-image: url("./images/v3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+.hero #hero-img {
+    width: 100%;
+    height: auto;
+    margin: 0% auto;
+    z-index: 2;
+}
+
+#hero .hero .hero-sub {
+    width: 99%;
+    margin: 0% auto;
+    position: relative;
+    bottom: 200px;
+    height: auto;
+}
+
+.hero .add {
+    width: 99%;
+    margin: 0% auto;
+    height: auto;
+}
+
+.hero .add p {
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero-sub .hero1 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.hero-sub .hero1 .shop2,
+.hero-sub .hero1 .shop3 {
+    padding: 10px;
+    background-color: white;
+    width: 23%;
+    height: 450px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.hero-sub .hero1 .shop2 .div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.hero-sub .hero1 .shop1 img {
+    width: 100%;
+}
+
+.hero-sub .hero1 .shop2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-sub .hero1 .shop2 .div div {
+    width: 45%;
+}
+
+.hero-sub .hero1 .shop2:hover {
+    transform: rotate(5deg);
+}
+
+.hero-sub .hero1 .shop2 div img {
+    width: 100%;
+}
+
+.hero-sub .hero1 .shop2 a,
+.hero-sub .hero1 .shop3 a {
+    text-decoration: underline;
+    color: rgb(0, 140, 255);
+}
+
+.hero-sub .hero1 .shop3 img {
+    width: 60%;
+}
+
+.hero-sub .hero1 .shop3 .kitchen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hero-sub .hero1 .shop3 div {
+    width: 33%;
+}
+
+.hero-sub .hero1 .shop3 div img {
+    width: 100%;
+}
+
+section .explore {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: white;
+}
+
+section .explore .explore-sub {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+section .hero-sub .beauty {
+    padding: 10px;
+    background-color: white;
+    height: 36vh;
+    overflow-x: auto;
+}
+
+section .hero-sub .beauty div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+section .hero-sub .beauty div img:hover {
+    transform: rotateX(20deg);
+    transform: rotateY(20deg);
+}
+
+section .hero-sub .products {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+section .hero-sub .products .picks {
+    padding: 10px;
+    background-color: white;
+    width: 32%;
+}
+
+section .hero-sub .products .picks div {
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    gap: 10px;
+}
+
+section .hero-sub .products .picks div .matter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+section .hero-sub .products .picks div img {
+    width: 100px;
+}
+
+section .hero-sub .products .picks div p {
+    width: 100%;
+    text-align: left;
+}
+
+section .hero-sub .products .picks div a {
+    color: rgb(0, 149, 255);
+}
+
+section .hero-sub .beauty div img {
+    padding: 5px;
+}
+
+section .explore .explore-sub div {
+    width: 50%;
+}
+
+section .explore .explore-sub div img {
+    width: 100%;
+}
+
+
+/* --------------Footer-------------- */
+
+footer {
+    padding: 10px;
+    color: lightcyan;
+    background-color: #223040;
+}
+
+.media-footer {
+    display: none;
+}
+
+.media-footer div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.media-footer div a {
+    color: #ccc;
+}
+
+footer .footer1 {
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+footer .footer1 div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+footer .footer1 h2 {
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+footer .footer1 a {
+    color: #ccc;
+    padding: 5px 10px;
+}
+
+footer .footer2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid lightgray;
+    flex-wrap: wrap;
+}
+
+footer .footer2 div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer .footer2 div p {
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.copyright {
+    padding: 10px;
+    align-items: center;
+    color: lightgray;
+    text-align: center;
+    background-color: #1f2327;
+}
+
+@media (max-width:800px) {
+    body {
+        background-color: white;
+    }
+    header .nav .nav-sub {
+        display: none;
+    }
+    header .nav {
+        justify-content: right;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    header .nav a img,
+    footer img {
+        width: 25%;
+    }
+    .list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    #toggle:checked~.list {
+        display: block;
+    }
+    label {
+        display: block;
+    }
+    .menu {
+        padding: 10px;
+        position: relative;
+        top: 81px;
+    }
+    .hero #hero-img,
+    #hero .hero,
+    .hero .hero-sub {
+        width: 100%;
+    }
+    .hero .hero-sub {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+    }
+    .hero .add p {
+        padding: 2px;
+    }
+    .hero-sub .hero1 {
+        padding: 0px;
+        gap: 3px;
+    }
+    .hero-sub .hero1 .shop2,
+    .hero-sub .hero1 .shop3 {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    .hero-sub .hero1 .shop2:hover {
+        transform: rotate(0);
+    }
+    .hero-sub .hero1 .shop2 .div div:hover {
+        transform: rotate(3deg);
+    }
+    .hero-sub .hero1 .shop2 div {
+        width: 60%;
+    }
+    section .hero-sub .beauty {
+        height: 100%;
+    }
+    section .hero-sub .products .picks div img {
+        width: 80%;
+    }
+    section .hero-sub .products .picks {
+        width: 100%;
+    }
+    section .hero-sub .products .picks div {
+        gap: 0px;
+    }
+    section .hero-sub .products .picks .matter {
+        padding: 0px;
+    }
+    section .explore .explore-sub {
+        padding: 3px;
+        flex-wrap: wrap-reverse;
+    }
+    section .explore .explore-sub div {
+        width: 45%;
+    }
+    .hero #hero-img {
+        display: none;
+    }
+    #hero .hero .view {
+        padding: 5px;
+        height: 300px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+        top: -30px;
+        width: 100%;
+    }
+    #hero .hero .view div {
+        padding: 15px;
+        min-width: 200px;
+        height: 100%;
+        gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+    footer .footer1 {
+        display: none;
+    }
+    footer .media-footer {
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+}
