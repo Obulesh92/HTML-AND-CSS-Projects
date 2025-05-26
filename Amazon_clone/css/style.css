@@ -219,7 +219,7 @@ label {
 }
 
 #hero .hero .view .v1 {
-    background-image: url("./images/v1.jpg");
+    background-image: url("./bgimages/v1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -227,7 +227,7 @@ label {
 }
 
 #hero .hero .view .v4 {
-    background-image: url("./images/v4.jpg");
+    background-image: url("./bgimages/v4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -235,7 +235,7 @@ label {
 }
 
 #hero .hero .view .v5 {
-    background-image: url("./images/v5.jpg");
+    background-image: url("./bgimages/v5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,7 +243,7 @@ label {
 }
 
 #hero .hero .view .v6 {
-    background-image: url("./images/v6.jpg");
+    background-image: url("./bgimages/v6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -251,7 +251,7 @@ label {
 }
 
 #hero .hero .view .v7 {
-    background-image: url("./images/v7.jpg");
+    background-image: url("./bgimages/v7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -259,7 +259,7 @@ label {
 }
 
 #hero .hero .view .v3 {
-    background-image: url("./images/v3.jpg");
+    background-image: url("./bgimages/v3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
