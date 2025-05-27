@@ -205,6 +205,10 @@ label {
     gap: 10px;
 }
 
+#hero .hero .view:hover {
+    border-bottom: 1px solid gray;
+}
+
 #hero .hero .view div {
     color: white;
     padding: 15px 10px;
