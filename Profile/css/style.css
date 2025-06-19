@@ -189,7 +189,7 @@
     
     @media (max-width:800px) {
         body {
-            padding: 15px;
+            padding: 20px;
         }
         .wrapper .card {
             width: 100%;
