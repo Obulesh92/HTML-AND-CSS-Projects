@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+a {
+    color: #0077B6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #005A99;
+    text-decoration: underline;
+}
+a i {
+    margin-right: 5px;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+header img {
+    padding: 5px;
+    max-height: 265px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elonbody {
+    margin: 1% 15%;
+    text-align: center;
+}
+.elonbody h1 {
+    color: #1D293F;
+}
+
+.main-hr {
+    border: none;
+    height: 3px;
+    background-color: #0077B6;
+    border-radius: 30px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.subhead {
+    width: 95%;
+    margin: 0 auto;
+}
+summary, .bio, .industry, .education, .other-ventures, .legacy-quote, .contacts {
+    margin: 15px 0;
+    padding: 20px 30px;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeInSlideUp 1s ease-out both;
+}
+
+/* ADDED HINT STYLING */
+.link-hint {
+    text-align: center;
+    font-size: 0.9em;
+    color: #4CAF50; /* Green text */
+    background-color: #E8F5E9; /* Light green background for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #A5D6A7;
+    margin: 10px 0;
+    width: 100%;
+    align-self: center;
+    order: 0; 
+}
+/* END OF ADDED HINT STYLING */
+
+
+.contacts {
+    text-align: center;
+    padding: 30px;
+}
+.social-contact h3 a {
+    font-size: 1.5em;
+    color: #0077B6;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.social-contact h3 a:hover {
+    color: #1D293F;
+}
+.social-contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.social-contact ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.other-ventures h3, .industry h3 {
+    color: #0077B6;
+    margin-top: 10px;
+}
+.Neuralink, .BoringCompany, .X-and-xAI {
+    margin-bottom: 20px;
+}
+summary b {
+    color: #0077B6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+.bio {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bio table {
+    width: 65%;
+    color: #333;
+    text-align: left;
+}
+.bio table tr {
+    margin: 5px 0;
+}
+.bio table b {
+    color: #1D293F;
+}
+.bio img {
+    padding: 10px;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-out;
+}
+.bio img:hover {
+    transform: scale(1.03);
+}
+
+.industry {
+    text-align: center;
+}
+.Starlink img, .Tesla img, .Spacex img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.Starlink, .Tesla, .Spacex {
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.Starlink:hover, .Tesla:hover, .Spacex:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.Starlink p, .Tesla p, .Spacex p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.elonbody hr {
+    padding: 0;
+}
+
+footer {
+    background-color: #1D293F;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+@media (max-width: 1024px) {
+    .elonbody {
+        margin: 1% 2%;
+    }
+    .bio table {
+        width: 50%;
+    }
+    .bio img {
+        width: auto;
+        height: 280px;
+    }
+    .elonbody h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 100%;
+        height: auto;
+    }
+    .elonbody {
+        margin: 0;
+        padding: 0 10px;
+    }
+    .elonbody h1 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    summary, .bio, .industry, .education, .other-ventures, .legacy-quote, .contacts {
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .bio {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .bio img {
+        width: 70%;
+        height: auto;
+        max-height: 250px;
+        order: -1;
+        padding: 0;
+    }
+    .bio table {
+        width: 100%;
+        font-size: 0.95em;
+    }
+    .link-hint {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .Starlink, .Tesla, .Spacex {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .Starlink p, .Tesla p, .Spacex p {
+        padding: 10px 0;
+    }
+
+    .legacy-quote blockquote {
+        font-size: 1em !important;
+    }
+}
